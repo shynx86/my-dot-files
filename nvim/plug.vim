@@ -39,6 +39,7 @@ if has("nvim")
   Plug 'rebelot/kanagawa.nvim'
   Plug 'scrooloose/nerdcommenter'
   Plug 'galooshi/vim-import-js'
+  Plug 'nvim-lua/lsp-status.nvim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
