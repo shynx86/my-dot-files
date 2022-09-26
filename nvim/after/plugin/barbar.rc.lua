@@ -17,3 +17,22 @@ map('n', '<leader>9', '<Cmd>BufferGoto 9<CR>', opts)
 map('n', '<leader>0', '<Cmd>BufferLast<CR>', opts)
 -- Close buffer
 map('n', '<leader>bd', '<Cmd>BufferClose<CR>', opts)
+
+
+
+require'bufferline'.setup {
+  -- Enable/disable animations
+  animation = false,
+  auto_hide = false,
+  tabpages = true,
+  exclude_ft = {'javascript'},
+  exclude_name = {'package.json'},
+  icons = false,
+  insert_at_end = true,
+  maximum_padding = 1,
+  icon_separator_active = '',
+  icon_separator_inactive = '',
+  icon_close_tab = '✘',
+  icon_close_tab_modified = '🐣',
+  icon_pinned = '📌',
+}
