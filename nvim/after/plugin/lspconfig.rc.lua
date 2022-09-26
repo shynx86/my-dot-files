@@ -45,3 +45,7 @@ require('lspconfig').sumneko_lua.setup {
   on_attach = on_attach,
   flags = lsp_flags,
 }
+require('lspconfig').emmet_ls.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+}
