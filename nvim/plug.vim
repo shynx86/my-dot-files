@@ -42,6 +42,8 @@ if has("nvim")
   Plug 'nvim-lua/lsp-status.nvim'
   Plug 'EdenEast/nightfox.nvim'
   Plug 'glepnir/dashboard-nvim'
+  Plug 'catppuccin/nvim'
+  Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
