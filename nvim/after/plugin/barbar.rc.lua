@@ -25,8 +25,6 @@ require'bufferline'.setup {
   animation = false,
   auto_hide = false,
   tabpages = true,
-  exclude_ft = {'javascript'},
-  exclude_name = {'package.json'},
   icons = false,
   insert_at_end = true,
   maximum_padding = 1,

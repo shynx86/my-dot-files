@@ -41,6 +41,9 @@ if has("nvim")
   Plug 'galooshi/vim-import-js'
   Plug 'nvim-lua/lsp-status.nvim'
   Plug 'EdenEast/nightfox.nvim'
+  Plug 'catppuccin/nvim'
+  "Plug 'sheerun/vim-polyglot'
+  Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
