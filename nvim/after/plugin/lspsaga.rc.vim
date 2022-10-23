@@ -14,7 +14,7 @@ EOF
 
 nnoremap <silent>]d <Cmd>Lspsaga diagnostic_jump_next<CR>
 nnoremap <silent>[d <Cmd>Lspsaga diagnostic_jump_prev<CR>
-nnoremap <silent>K <Cmd>Lspsaga hover_doc<CR>
+"nnoremap <silent>K <Cmd>Lspsaga hover_doc<CR>
 "nnoremap <silent> K <Cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
 inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
 "nnoremap <leader>gh <Cmd>Lspsaga lsp_finder<CR>

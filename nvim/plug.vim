@@ -44,6 +44,7 @@ if has("nvim")
   Plug 'glepnir/dashboard-nvim'
   Plug 'catppuccin/nvim'
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+  Plug 'glepnir/dashboard-nvim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
