@@ -7,16 +7,16 @@ window:
     y: 0
 font:
   normal:
-    #family: Iosevka Nerd Font
-    family: ShureTechMono Nerd Font Mono
+    family: Anonymice Nerd Font
+    #family: ShureTechMono Nerd Font Mono
     style: Regular
   bold:
     style: Bold
   italic:
-    style: Light Italic
+    style: Regular Italic
   bold_italic:
     style: Bold Italic
-  size: 20
+  size: 18
   use_thin_strokes: true
   offset:
     x: 0
