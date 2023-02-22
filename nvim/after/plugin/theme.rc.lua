@@ -25,9 +25,9 @@ require('nightfox').setup({
       comments = "italic",
       keywords = "bold",
       types = "italic,bold",
-    },
+    }
   }
 })
 
---vim.cmd("colorscheme terafox")
-vim.cmd("colorscheme spaceduck")
+vim.cmd("colorscheme dayfox")
+--vim.cmd("colorscheme spaceduck")

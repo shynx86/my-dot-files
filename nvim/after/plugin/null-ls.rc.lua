@@ -13,7 +13,7 @@ local sources = {
     filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "css", "scss", "less", "html",
       "json", "jsonc", "yaml", "markdown", "markdown.mdx", "graphql", "handlebars" }
   }),
-  null_ls.builtins.diagnostics.eslint_d,
+  --null_ls.builtins.diagnostics.eslint_d,
   --null_ls.builtins.code_actions.eslint_d
 }
 
