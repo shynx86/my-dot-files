@@ -43,7 +43,8 @@ require'nvim-tree'.setup {
     },
     number = false,
     relativenumber = false,
-    signcolumn = "no"
+    signcolumn = "no",
+    width = 60
   },
   trash = {
     cmd = "trash",

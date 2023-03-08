@@ -29,5 +29,5 @@ require('nightfox').setup({
   }
 })
 
-vim.cmd("colorscheme dayfox")
+vim.cmd("colorscheme terafox")
 --vim.cmd("colorscheme spaceduck")

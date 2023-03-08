@@ -3,6 +3,7 @@
     "Lua.diagnostics.globals": [
         "vim",
         "print",
-        "require"
+        "require",
+        "FugitiveStatusline"
     ]
 }

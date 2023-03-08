@@ -41,7 +41,7 @@ if has("nvim")
   Plug 'galooshi/vim-import-js'
   Plug 'nvim-lua/lsp-status.nvim'
   Plug 'EdenEast/nightfox.nvim'
-  "Plug 'glepnir/dashboard-nvim'
+  Plug 'glepnir/dashboard-nvim'
   Plug 'catppuccin/nvim'
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
   Plug 'glepnir/dashboard-nvim'
