@@ -1,6 +1,3 @@
-" Fundamentals "{{{
-" ---------------------------------------------------------------------
-
 " init autocmd
 autocmd!
 " set script encoding
@@ -10,7 +7,7 @@ if !1 | finish | endif
 
 let mapleader = " "
 set nocompatible
-set number
+set number relativenumber
 syntax enable
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
@@ -63,10 +60,6 @@ autocmd InsertLeave * set nopaste
 " Add asterisks in block comments
 set formatoptions+=r
 
-"}}}
-
-" Highlights "{{{
-" ---------------------------------------------------------------------
 set cursorline
 "set cursorcolumn
 
@@ -74,6 +67,7 @@ set cursorline
 highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
 
 highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
+"hi Normal guibg=NONE ctermbg=NONE
 
 augroup BgHighlight
   autocmd!
@@ -86,10 +80,6 @@ if &term =~ "screen"
   autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
 endif
 
-"}}}
-
-" File types "{{{
-" ---------------------------------------------------------------------
 " JavaScript
 au BufNewFile,BufRead *.es6 setf javascript
 " TypeScript
@@ -108,17 +98,9 @@ autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
-"}}}
-
-" Imports "{{{
-" ---------------------------------------------------------------------
 runtime ./plug.vim
 runtime ./macos.vim
 runtime ./maps.vim
-"}}}
-
-" Syntax theme "{{{
-" ---------------------------------------------------------------------
 
 " true color
 if exists("&termguicolors") && exists("&winblend")
@@ -129,11 +111,21 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
 endif
 
-"}}}
-
-" Extras "{{{
-" ---------------------------------------------------------------------
 set exrc
-"}}}
 
-" vim: set foldmethod=marker foldlevel=0:
+"if !has('gui_running') && &term =~ '^\%(screen\|tmux\)'
+  "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"endif
+
+"syntax on
+set termguicolors
+"colorscheme melange
+"colorscheme zenbones
+"colorscheme nord
+"colorscheme rose-pine-dawn
+
+"let g:deoplete#enable_at_startup = 1
+
+"hi Normal guibg=NONE ctermbg=NONE"
+set fillchars=vert:\│,eob:\ 

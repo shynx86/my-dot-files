@@ -1,20 +1,19 @@
 lua << EOF
-require'nvim-tree'.setup {
+local builtin = require('nvim-tree')
+builtin.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
-  open_on_setup       = false,
-  ignore_ft_on_setup  = {},
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
   diagnostics = {
-    enable = false,
-    icons = {
-      error = '🪰',
-      warning = '🐥',
-      hint = '🐚',
-      info = '🦋',
-    }
+    enable = true,
+    --icons = {
+      --error = '🪰',
+      --warning = '🐥',
+      --hint = '🐚',
+      --info = '🦋',
+    --}
   },
   update_focused_file = {
     enable      = false,
@@ -41,14 +40,22 @@ require'nvim-tree'.setup {
       custom_only = false,
       list = {}
     },
-    number = false,
-    relativenumber = false,
     signcolumn = "no",
-    width = 60
+    width = 50
   },
   trash = {
     cmd = "trash",
     require_confirm = true
+  },
+  renderer = {
+    icons = {
+      glyphs = {
+        folder = {
+          arrow_closed = "▸", -- arrow when folder is closed
+          arrow_open = "▾", -- arrow when folder is open
+        },
+      },
+    },
   }
 }
 EOF

@@ -1,54 +1,63 @@
 window:
-  startup_mode: Maximized
+  startup_mode: Fullscreen
   title: Welcome NguyenHo
   decorations: none
+  #opacity: 0.8
   padding:
     x: 0
     y: 0
 font:
   normal:
-    family: CaskaydiaCove Nerd Font
+    family: Iosevka Nerd Font
+    #family: MesloLGL Nerd Font
     style: Light
   bold:
-    style: SemiBold
+    style: Bold
   italic:
-    style: Light Italic
+    style: Medium Oblique
   bold_italic:
-    style: SemiBold Italic
-  size:
-    14
-    # use_thin_strokes: true
+    style: Bold Oblique
+  size: 21
   offset:
     x: 0
     y: 0
+    # Colors (Ayu Dark)
+
 colors:
-  # Default colors
   primary:
-    background: "0x152528"
-    foreground: "0xe6eaea"
-  # Normal colors
+    background: '#181616'
+    foreground: '#c5c9c5'
+
   normal:
-    black: "0x2f3239"
-    red: "0xe85c51"
-    green: "0x7aa4a1"
-    yellow: "0xfda47f"
-    blue: "0x5a93aa"
-    magenta: "0xad5c7c"
-    cyan: "0xa1cdd8"
-    white: "0xebebeb"
-  # Bright colors
+    black:   '#0d0c0c'
+    red:     '#c4746e'
+    green:   '#8a9a7b'
+    yellow:  '#c4b28a'
+    blue:    '#8ba4b0'
+    magenta: '#a292a3'
+    cyan:    '#8ea4a2'
+    white:   '#C8C093'
+
   bright:
-    black: "0x4e5157"
-    red: "0xeb746b"
-    green: "0x8eb2af"
-    yellow: "0xfdb292"
-    blue: "0x73a3b7"
-    magenta: "0xb97490"
-    cyan: "0xafd4de"
-    white: "0xeeeeee"
+    black:   '#a6a69c'
+    red:     '#E46876'
+    green:   '#87a987'
+    yellow:  '#E6C384'
+    blue:    '#7FB4CA'
+    magenta: '#938AA9'
+    cyan:    '#7AA89F'
+    white:   '#c5c9c5'
+
+  selection:
+    background: '#2D4F67'
+    foreground: '#C8C093'
+
   indexed_colors:
-    - { index: 16, color: "0xff8349" }
-    - { index: 17, color: "0xcb7985" }
+    - { index: 16, color: '#b6927b' }
+    - { index: 17, color: '#b98d7b' }
+
 cursor:
   style: Block
   unfocused_hollow: true
+env:
+  TERM: xterm-256color

@@ -1,0 +1,4 @@
+{
+  "lspsaga.nvim": { "branch": "main", "commit": "1ead4ce8a20a8ac7e96aca038d54ceaa185be4e0" },
+  "nvim-web-devicons": { "branch": "master", "commit": "4ec26d67d419c12a4abaea02f1b6c57b40c08d7e" }
+}
