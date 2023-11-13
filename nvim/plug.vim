@@ -42,22 +42,23 @@ if has("nvim")
   Plug 'scrooloose/nerdcommenter'
   Plug 'galooshi/vim-import-js'
   Plug 'EdenEast/nightfox.nvim'
-  Plug 'hienvd/vim-stackoverflow'
   Plug 'lewis6991/gitsigns.nvim'
-  Plug 'luisiacc/the-matrix.nvim'
   Plug 'mhinz/vim-startify'
-  Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'arcticicestudio/nord-vim'
   Plug 'shmargum/vim-sass-colors'
   Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug 'rose-pine/neovim'
   Plug 'folke/lazy.nvim'
   "Plug 'Shougo/deoplete.nvim'
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'github/copilot.vim'
   Plug 'tpope/vim-rails'
-  Plug 'savq/melange-nvim'
+  Plug 'huyvohcmc/atlas.vim'
+  Plug 'catppuccin/nvim'
   Plug 'NLKNguyen/papercolor-theme'
+  Plug 'morhetz/gruvbox'
+  "Plug 'ellisonleao/gruvbox.nvim'
+  Plug 'sainnhe/everforest'
+  Plug 'Jorengarenar/vim-darkness'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

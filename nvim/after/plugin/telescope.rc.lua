@@ -11,9 +11,46 @@ vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {})
 
 local telescope = require('telescope')
 telescope.setup {
-  theme="kanagawa-dragon",
-  file_ignore_patterns = { "gtk/**/*", "node_modules", ".git", "pdf_viewer" },
+  theme="cappuchin",
+  file_ignore_patterns = { "gtk/**/*", "node_modules", ".git", "pdf_viewer", "node%_modules/.*" },
   defaults = {
-    layout_strategy = "vertical",
+    layout_strategy = "bottom_pane",
+    layout_config = {
+      height = 0.4,
+      width = 1,
+    }
   },
+  --pickers = {
+    --find_files = {
+      --theme = "ivy"
+    --},
+    --live_grep = {
+      --theme = "ivy"
+    --},
+    --grep_string = {
+      --theme = "ivy"
+    --},
+    --buffers = {
+      --theme = "ivy"
+    --},
+    --help_tags = {
+      --theme = "ivy"
+    --},
+    --commands = {
+      --theme = "ivy"
+    --},
+    --lsp_references = {
+      --theme = "ivy"
+    --},
+    --diagnostics = {
+      --theme = "ivy"
+    --},
+    --colorscheme = {
+      --theme = "ivy"
+    --},
+  --}
 }
+
+--require('telescope.builtin').find_files(require('telescope.themes').get_ivy())
+
+vim.api.nvim_set_hl(0, "TelescopeBorder", {bg="#FFFFFF", fg="#000000"})

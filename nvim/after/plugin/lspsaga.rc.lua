@@ -10,7 +10,7 @@ require("lspsaga").setup({
     -- This option only works in Neovim 0.9
     title = true,
     -- Border type can be single, double, rounded, solid, shadow.
-    border = "single",
+    border = "rounded",
     winblend = 0,
     expand = "",
     collapse = "",
@@ -43,10 +43,10 @@ local keymap = vim.keymap.set
 -- If there is no definition, it will instead be hidden
 -- When you use an action in finder like "open vsplit",
 -- you can use <C-t> to jump back
-keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
+--keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 
 -- Code action
-keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
+--keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 
 -- Rename all occurrences of the hovered word for the entire file
 --keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
@@ -59,10 +59,10 @@ keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 -- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
 -- It also supports tagstack
 -- Use <C-t> to jump back
-keymap("n", "gp", "<cmd>Lspsaga peek_definition<CR>")
+--keymap("n", "gp", "<cmd>Lspsaga peek_definition<CR>")
 
 -- Go to definition
-keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
+--keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
 
 -- Peek type definition
 -- You can edit the file containing the type definition in the floating window
@@ -81,7 +81,7 @@ keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
 --keymap("n", "<leader>sl", "<cmd>Lspsaga show_line_diagnostics<CR>")
 
 -- Show buffer diagnostics
-keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
+--keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
 
 -- Show workspace diagnostics
 --keymap("n", "<leader>sw", "<cmd>Lspsaga show_workspace_diagnostics<CR>")
@@ -91,8 +91,8 @@ keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
 
 -- Diagnostic jump
 -- You can use <C-o> to jump back to your previous location
-keymap("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
-keymap("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+--keymap("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
+--keymap("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 
 -- Diagnostic jump with filters such as only jumping to an error
 --keymap("n", "[E", function()
@@ -103,7 +103,7 @@ keymap("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 --end)
 
 -- Toggle outline
-keymap("n","<C-o>", "<cmd>Lspsaga outline<CR>")
+--keymap("n","<C-o>", "<cmd>Lspsaga outline<CR>")
 
 -- Hover Doc
 -- If there is no hover doc,
@@ -111,7 +111,7 @@ keymap("n","<C-o>", "<cmd>Lspsaga outline<CR>")
 -- there is no information available.
 -- To disable it just use ":Lspsaga hover_doc ++quiet"
 -- Pressing the key twice will enter the hover window
-keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+--keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>")
 
 -- If you want to keep the hover window in the top right hand corner,
 -- you can pass the ++keep argument
@@ -125,4 +125,4 @@ keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>")
 --keymap("n", "<Leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
 
 -- Floating terminal
-keymap({"n", "t"}, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
+--keymap({"n", "t"}, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")

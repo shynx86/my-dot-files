@@ -45,16 +45,16 @@ require'barbar'.setup {
   highlight_inactive_file_icons = false,
 
   -- Enable highlighting visible buffers
-  highlight_visible = true,
+  highlight_visible = false,
 
   icons = {
     -- Configure the base icons on the bufferline.
     buffer_index = false,
     buffer_number = false,
-    button = '',
+    button = '✗',
     -- Enables / disables diagnostic symbols
     diagnostics = {
-      [vim.diagnostic.severity.ERROR] = {enabled = false, icon = 'ﬀ'},
+      [vim.diagnostic.severity.ERROR] = {enabled = false},
       [vim.diagnostic.severity.WARN] = {enabled = false},
       [vim.diagnostic.severity.INFO] = {enabled = false},
       [vim.diagnostic.severity.HINT] = {enabled = false},
@@ -73,7 +73,7 @@ require'barbar'.setup {
     -- Configure the icons on the bufferline based on the visibility of a buffer.
     -- Supports all the base icon options, plus `modified` and `pinned`.
     alternate = {filetype = {enabled = false}},
-    inactive = {button = '×'},
+    inactive = {button = '✗'},
     visible = {modified = {buffer_number = false}},
   },
 
@@ -116,5 +116,6 @@ require'barbar'.setup {
 
   -- Sets the name of unnamed buffers. By default format is "[Buffer X]"
   -- where X is the buffer number. But only a static string is accepted here.
-  no_name_title = nil,
+  no_name_title = 'New buffer',
 }
+

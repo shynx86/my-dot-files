@@ -7,7 +7,7 @@ builtin.setup {
   hijack_cursor       = false,
   update_cwd          = false,
   diagnostics = {
-    enable = true,
+    enable = false,
     --icons = {
       --error = '🪰',
       --warning = '🐥',
@@ -51,8 +51,8 @@ builtin.setup {
     icons = {
       glyphs = {
         folder = {
-          arrow_closed = "▸", -- arrow when folder is closed
-          arrow_open = "▾", -- arrow when folder is open
+          arrow_closed = "", -- arrow when folder is closed
+          arrow_open = "", -- arrow when folder is open
         },
       },
     },

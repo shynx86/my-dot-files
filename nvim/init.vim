@@ -120,12 +120,14 @@ set exrc
 
 "syntax on
 set termguicolors
+set signcolumn=yes
 "colorscheme melange
 "colorscheme zenbones
 "colorscheme nord
 "colorscheme rose-pine-dawn
+"colorscheme dracula
 
 "let g:deoplete#enable_at_startup = 1
+"hi Normal guibg=NONE ctermbg=NONE
 
-"hi Normal guibg=NONE ctermbg=NONE"
-set fillchars=vert:\│,eob:\ 
+set fillchars=vert:\◦,eob:\ 
